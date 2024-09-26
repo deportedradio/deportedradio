@@ -1,4 +1,49 @@
-/* Style the video: 100% width and height to cover the entire window */
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto
+}
+.navbar {
+  width:100%;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  border-bottom: 2px solid black;
+}
+.logo{
+  width: 80px;
+  float:left;
+}
+
+/* this is for ul tag */
+.menu{
+  float:right;
+}
+.menu li{
+  float:left;
+  width:120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  list-style: none;
+}
+.menu li a{
+  color: #000;
+  text-decoration: none;
+  font-family: calibri;
+  text-transform: uppercase;
+  display:block;
+}
+.menu li:hover{
+  background: #dc3545
+}
+.menu li a:hover{
+  color: #fff
+}
 #myVideo {
   position: fixed;
   z-index: -1;
@@ -7,60 +52,4 @@
   min-width: 100%; 
   min-height: 100%;
   filter: brightness(25%);
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-
-/* Top navigation */
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
 }
