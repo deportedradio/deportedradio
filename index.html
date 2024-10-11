@@ -14,31 +14,6 @@ body {
   font-family: Arial;
   font-size: 17px;
 }
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  z-index: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 	
 #overlay {
   position: fixed;
@@ -54,6 +29,20 @@ body {
   cursor: pointer;
 }
 
+#menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10;
+  background-color: #fff;
+  z-index: 0;
+  cursor: pointer;
+}
+	
 #content {
   position: fixed;
   display: block;
@@ -83,6 +72,11 @@ div.content {
   height: 1000px;
 }
 
+div.menu {
+  margin-bottom: 5%;
+  padding: 1px 16px;
+  height: 100px;
+}
 </style>
 	
 </head>
@@ -95,14 +89,17 @@ div.content {
  		</video>
 	</div>
 
-<div class="topnav">
-  <a class="active" href="https://deportedradio.com">Home</a>
-  <a href="https://deportedradio.com/privacypolicy.html">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+<div id="menu"</div>
+	<div style="padding:20px">
+	 <div class="topnav">
+  		<a href="https://deportedradio.com">Home</a>
+  		<a href="https://deportedradio.com/privacypolicy.html">News</a>
+  		<a href="#contact">Contact</a>
+  		<a href="#about">About</a>
+	 </div>
+	</div>
 	
-<div id="content"</div>
+<div id="content"></div>
 	<div style="padding:20px">
   		<p>Content</p>
 	</div>
